@@ -1,22 +1,24 @@
 //rfc
 import React from 'react';
+import ReadDate from '../ReadDate/ReadDate';
 import BookCard from '../BookCard/BookCard.css';
 
 import './BookItems.css'
 
-const BookItems = ({pTitle, pAuthor, pDate, pPageCount}) => {
+const BookItems = ({title, author, dateRead, pageCount}) => {
     //hardcoded
-    const bookDate = new Date("2023-05-02");
-    const bookTitle = "Pade Rico, padre Pobre";
-    const bookAuthor = "Robert";
-    const bookPageCount = 320;
+    // const bookDate = new Date("2023-05-02");
+    // const bookTitle = "Padre Rico, padre Pobre";
+    // const bookAuthor = "Robert";
+    // const bookPageCount = 320;
+   
 
     return (
         <div className='book-item-container'>
-            <h2>{pTitle}</h2>
-            <h3>{pAuthor}</h3>
-            <div>{pDate.toString()}</div>
-            <p>{pPageCount} pag</p>
+            <h2>{title}</h2>
+            <h3>{author}</h3>
+            <div><ReadDate date={dateRead}/></div>
+            <p>{pageCount} pag</p>
         </div>
     );
 }

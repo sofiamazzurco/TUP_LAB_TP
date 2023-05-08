@@ -1,6 +1,7 @@
 
 import './App.css';
 import BookItems from './components/BookItems/BookItems';
+import Header from './components/Header/Header';
 
 const App = () => {
   const books = [
@@ -31,7 +32,9 @@ const App = () => {
   
   return (
     <div className="App">
-      <h2>Hola</h2>
+      <Header/>
+  
+
       <BookItems 
         title={books[0].title}
         author={books[0].author}
@@ -61,3 +64,4 @@ const App = () => {
 }
 
 export default App;
+
