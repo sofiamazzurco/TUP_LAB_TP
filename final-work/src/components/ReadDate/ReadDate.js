@@ -1,4 +1,4 @@
-const ReadDate = ({date}) => {
+const ReadDate = ({ date }) => {
     const year = date.getFullYear();
     const month = date.toLocaleString("es-AR", {month: "long" });
     const day = date.toLocaleString("es-AR", {day: "2-digit" });

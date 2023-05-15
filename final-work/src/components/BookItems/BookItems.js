@@ -2,7 +2,7 @@
 import React from 'react';
 
 import ReadDate from '../ReadDate/ReadDate';
-import BookCard from '../BookCard/BookCard.css';
+// import BookCard from '../BookCard/BookCard.css';
 
 import './BookItems.css'
 
@@ -18,7 +18,9 @@ const BookItems = ({title, author, dateRead, pageCount}) => {
         <div className='books-container'>
             <h2>{title}</h2>
             <h3>{author}</h3>
+            <div>
             <ReadDate date={dateRead}/>
+            </div>
             <p>{pageCount} pag</p>
         </div>
     );

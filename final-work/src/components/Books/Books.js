@@ -5,8 +5,14 @@ import BookItems from "../BookItems/BookItems";
 const Books = ({ books }) => {
     return (
         <div className="books-container">
-            {books.map((books) => (
-                <BookItems key={books.id} books={books} />
+            {books.map((book) => (
+                <BookItems
+                key={book.id}
+                title={book.title}
+                author={book.author}
+                dateRead={book.dateRead}
+                pageCount={book.pageCount}
+                />
             ))}
         </div>
     );
