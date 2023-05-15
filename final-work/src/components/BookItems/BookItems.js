@@ -2,7 +2,7 @@
 import React from 'react';
 
 import ReadDate from '../ReadDate/ReadDate';
-// import BookCard from '../BookCard/BookCard.css';
+import BookCard from '../BookCard/BookCard.jsx';
 
 import './BookItems.css'
 
@@ -15,14 +15,14 @@ const BookItems = ({title, author, dateRead, pageCount}) => {
 
 
     return (
-        <div className='books-container'>
+        <BookCard>
             <h2>{title}</h2>
             <h3>{author}</h3>
             <div>
             <ReadDate date={dateRead}/>
             </div>
             <p>{pageCount} pag</p>
-        </div>
+        </BookCard>
     );
 }
 
