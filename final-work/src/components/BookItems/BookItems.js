@@ -1,5 +1,6 @@
 //rfc
 import React from 'react';
+
 import ReadDate from '../ReadDate/ReadDate';
 import BookCard from '../BookCard/BookCard.css';
 
@@ -11,13 +12,13 @@ const BookItems = ({title, author, dateRead, pageCount}) => {
     // const bookTitle = "Padre Rico, padre Pobre";
     // const bookAuthor = "Robert";
     // const bookPageCount = 320;
-   
+
 
     return (
-        <div className='book-item-container'>
+        <div className='books-container'>
             <h2>{title}</h2>
             <h3>{author}</h3>
-            <div><ReadDate date={dateRead}/></div>
+            <ReadDate date={dateRead}/>
             <p>{pageCount} pag</p>
         </div>
     );
