@@ -1,3 +1,4 @@
+import React from 'react';
 import './BookItems.css';
 
 import Card from '../Card/Card';
