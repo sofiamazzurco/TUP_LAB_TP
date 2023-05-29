@@ -1,46 +1,70 @@
 
 import './App.css';
 
-import Header from './components/Header/Header';
-import Books from './components/Books/Books';
+import Header from './components/Header/Header'
+import BookItems from './components/BookItem/BookItems';
 
 const App = () => {
-  const books = [
+  const hardcoreBooks = [
     { 
       id: 1,
       title: 'Padre Rico, Padre Pobre', 
       author: 'Robert',
-      dateRead: new Date(2021, 8, 12),
+      date: new Date(2021, 8, 12),
       pageCount: 410,
     },
     {
       id: 2,
       title: "Todos los fuegos el fuego",
       author: "Julio Cortazar",
-      dateRead: new Date(2020, 6, 11),
+      date: new Date(2020, 6, 11),
       pageCount: 197,
     },
     {
       id: 3,
       title: "Asesinato en el Orient Express",
       author: "Agatha Christie",
-      dateRead: new Date(2021, 5, 9),
+      date: new Date(2021, 5, 9),
       pageCount: 256,
     },
     {
       id: 4,
       title: "Las dos torres",
       author: "J.R.R Tolkien",
-      dateRead: new Date(2020, 3, 22),
+      date: new Date(2020, 3, 22),
       pageCount: 352,
     },
   ];
   
   return (
-    <div className="App">
+    <div>
       <Header/>
-      <Books books = {books}/>
+      <BookItems 
+        title = {hardcoreBooks[0].title}
+        author = {hardcoreBooks[0].author}
+        date = {hardcoreBooks[0].date}
+        pages = {hardcoreBooks[0].pages}
+      />
+      <BookItems
+        title = {hardcoreBooks[1].title}
+        author = {hardcoreBooks[1].author}
+        date = {hardcoreBooks[1].date}
+        pages = {hardcoreBooks[1].pages}
+      />
+      <BookItems
+        title = {hardcoreBooks[2].title}
+        author = {hardcoreBooks[2].author}
+        date = {hardcoreBooks[2].date}
+        pages = {hardcoreBooks[2].pages}
+      />
+      <BookItems
+        title = {hardcoreBooks[3].title}
+        author = {hardcoreBooks[3].author}
+        date = {hardcoreBooks[3].date}
+        pages = {hardcoreBooks[3].pages}
+      />
     </div>
+
   );
 }
 
