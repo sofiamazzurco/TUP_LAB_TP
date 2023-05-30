@@ -1,9 +1,11 @@
-.header {
-    background-color: #52BE80;
-    width: auto;
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.div-header{
+    background-color: white;
 }
 
+.title-header{
+    font-size: 60px;
+}
+
+/*.div-container{
+
+}*/
