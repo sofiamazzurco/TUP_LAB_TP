@@ -1,6 +1,7 @@
 import React from 'react';
 import BookItems from '../BookItem/BookItems';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const BooksHome = () => {
   const hardcoreBooks = [
@@ -62,6 +63,7 @@ const BooksHome = () => {
         date = {hardcoreBooks[3].date}
         pages = {hardcoreBooks[3].pages}
       />
+      <Footer />
     </div>
 
   );
