@@ -1,3 +1,8 @@
+.searchExpanded {
+  width: 700px;
+  /* Otros estilos para agrandar el input */
+}
+
 
 .navBar {
     background-color:#52BE80;;

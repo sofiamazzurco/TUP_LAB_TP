@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 
-const BookHome = () => {
-    const hardcoreBooks = [
+const DUMMY_BOOKS = [
       { 
         id: 1,
         title: 'Padre Rico, Padre Pobre', 
@@ -31,6 +30,25 @@ const BookHome = () => {
         pageCount: 352,
       },
     ];
-}
 
-export default BookHome;
+    const Dashboard = () => {
+      const [books, setBooks] = useState(DUMMY_BOOKS);
+
+      const addedBookHandler = (bookData) => {
+        const newBooksArray = [bookData, ...books];
+        setBooks(newBooksArray);
+      };
+
+      return (
+        <>
+          <h2>Books Champion App</h2>
+          <NewBook onBookAdded={addedBookHandler} />
+          <Books books={books} />
+        </>
+      )
+
+    }
+
+
+
+export default Dashboard;
